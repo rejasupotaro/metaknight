@@ -45,5 +45,5 @@ List<Class<?>> foundClasses = PackageScanner.searchSubClasses(
 include ':app', ':..:metaknight:library'
 
 // app/build.gradle
-compile project(':..:LogHouse:library')
+compile project(':..:metaknight:library')
 ```
