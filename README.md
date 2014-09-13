@@ -20,6 +20,16 @@ recipe.getId(); // => 1
 recipe.getName(); // "Monkey Bread"
 ```
 
+### Overwrite Object's Field
+
+```java
+Recipe recipe = new Recipe();
+ClassUtils.overwriteField(recipe, "name", "Perfect Salmon");
+ecipe.getName(); // => "Perfect Salmon"
+ClassUtils.overwriteField(recipe, "name", "Texas Crab Salad");
+recipe.getName(); // => "Texas Crab Salad"
+```
+
 ### Get Sub Classes
 
 ```java
