@@ -5,19 +5,11 @@ metaknight
 
 ## Description
 
-metaknight is hero of your test.
+metaknight is the hero of your test.
 
 ## Usage
 
-### Get Sub Classes
-
-```java
-List<Class<?>> foundClasses = PackageScanner.searchSubClasses(
-    getInstrumentation().getTargetContext(),
-    Model.class);
-```
-
-### Instantiation
+### Object Instantiation
 
 ```java
 Recipe recipe = new Something()
@@ -26,6 +18,14 @@ Recipe recipe = new Something()
     .realize(Recipe.class);
 recipe.getId(); // => 1
 recipe.getName(); // "Monkey Bread"
+```
+
+### Get Sub Classes
+
+```java
+List<Class<?>> foundClasses = PackageScanner.searchSubClasses(
+    getInstrumentation().getTargetContext(),
+    Model.class);
 ```
 
 ## Install
